@@ -1,0 +1,63 @@
+.body{
+    background-color: #f7f7f7;
+}.flogo{
+    height: 100px;
+}
+.title{
+    
+    color: #006bef;
+    font-family: Klavika;
+    font-weight: bold;
+
+}
+.FaceBook{
+    text-align: center;
+}
+.FaceBook h1{
+    justify-content: center !important;
+    /* margin-top: 40px; */
+}
+.loginText{
+    font-family: inherit;
+}
+
+
+.logindetails {
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  
+  .logindetails .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .logindetails .btn-primary:hover {
+    background-color: #0069d9;
+  }
+
+ 
+  .login{
+    font-weight: bold;
+  }
+  .links{
+    margin-top: 10px;
+  }
+  .links a{
+    margin-left: 5px;
+  }
