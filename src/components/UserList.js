@@ -1,44 +1,36 @@
-import React, { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import React from 'react'
 
-const App = () => {
-  const [isShow, setShow] = useState(false);
+export default function UserList(props) {
 
-  const handleModalOpen = () => {
-    setShow(true);
+ 
+  const userProfile = {
+    height: "100px",
+    width: "100px",
+    borderRadius: "50%",
+  };
+  const userName = {
+    margin: "31px 14px",
+    fontSize: "16px",
   };
 
-  const handleModalClose = () => {
-    setShow(false);
-  };
+
 
   return (
-    <>
-      <button type="button" className="btn btn-light UserBtn" onClick={handleModalOpen}>
-        Users
-      </button>
-      <button type="button" className="btn btn-light UserBtn" onClick={handleModalOpen}>
-        Add User
-      </button>
-
-      <Modal show={isShow} onHide={handleModalClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>React Modal Popover Example</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="danger" onClick={handleModalClose}>
-            Close
-          </Button>
-          <Button variant="dark" onClick={handleModalClose}>
-            Store
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
+    <div className="d-flex userSection">
+    <div className=" d-flex userData " >
+      <img
+        src={process.env.PUBLIC_URL + "profile.jpg"}
+        className="flogo"
+        alt="profileimage"
+        style={userProfile}
+       
+      />
+      <h4 style={userName}>{props.userName}</h4>
+    </div>
+    <div className="d-flex">
+      <button type="button" className="btn btn-success ms-1 ">Confirm</button>
+      <button type="button" className="btn btn-dark ms-1">Not Now</button>
+    </div>
+  </div>
   );
-};
-
-export default App;
+}

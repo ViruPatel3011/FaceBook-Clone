@@ -54,6 +54,8 @@
  
   .login{
     font-weight: bold;
+    color: white;
+    text-decoration: none;
   }
   .links{
     margin-top: 10px;

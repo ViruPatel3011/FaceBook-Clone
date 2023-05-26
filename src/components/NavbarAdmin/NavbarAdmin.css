@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --btn-width-100: 100px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Css Start  */
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #3b5998;
+}
+nav ul {
+  margin: 0;
+  padding: 8px 15px;
+  list-style: none;
+  display: flex;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+nav ul li {
+  padding: 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav ul #fb {
+  background: #0b84ed;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+nav ul #search_btn {
+  border: none;
+  outline: none;
+  background: gray;
+  padding: 8px;
+  color: black;
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+nav ul input {
+  border: 1px solid gray;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+nav ul li {
+  height: 40px;
+  width: var(--btn-width-100);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+}
+nav ul li span {
+  font-size: 20px;
+  font-family: Klavika;
+}
+
+nav ul li button {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+nav ul li#space1 {
+  flex: 1;
+}
+nav ul li#space2 {
+  flex: 2;
+}
+
+/* Navbar Css End  */
+
+@media screen and (max-width: 700px) {
+  nav ul li#space1,
+  nav ul li#space2 {
+    display: none;
+  }
+  nav ul {
+    min-width: 600px;
+    padding: 8px 12px;
+    justify-content: space-between;
+  }
+  :root {
+    --btn-width-100: 60px;
+  }
+}
+
+.userSection {
+  border: 2px solid rgb(239 230 230);
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 15px;
+    padding: 10px;
+
+}
+.userData {
+  width: 250px;
+  justify-content: space-around;
+}
+.d-flex .btn {
+  height: 40px;
+}
+
+/* Navbar Search Box css Start */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 47px;
+}
+
+.search-icon {
+  margin-right: 5px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Navbar Search Box css End */
