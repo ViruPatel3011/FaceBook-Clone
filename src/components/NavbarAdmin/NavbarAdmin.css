@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
 }
-:root {
+/* :root {
   --btn-width-100: 100px;
-}
+} */
 body {
   margin: 0;
   padding: 0;
+  background-color: #f7f7f7 !important;
 }
 
 /* Navbar Css Start  */
@@ -60,7 +61,7 @@ nav ul input {
 
 nav ul li {
   height: 40px;
-  width: var(--btn-width-100);
+  /* width: var(--btn-width-100); */
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -71,6 +72,7 @@ nav ul li {
 nav ul li span {
   font-size: 20px;
   font-family: Klavika;
+  margin: 0 5px;
 }
 
 nav ul li button {

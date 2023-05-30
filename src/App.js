@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route ,Routes } from 'react-router-dom';
 import NavbarAdmin from './components/NavbarAdmin/NavbarAdmin';
 import LoginPage from './components/LoginPage/LoginPage';
+import ForgotPassword from './components/ForgotPassword';
 // import Navbar from './components/NavbarUser/Navbar';
 
 
@@ -21,6 +22,7 @@ function App() {
   <Routes>
     <Route path="/navbarAdmin" element={<NavbarAdmin />} />
     <Route path="/" element={<LoginPage />} />
+    <Route path="/forgot" element={<ForgotPassword />} />
     
   </Routes>
 </Router>
